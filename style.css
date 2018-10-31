@@ -1,0 +1,56 @@
+.header{
+	background-color: white;
+
+
+}
+
+.form{
+	width: 400px;
+	text-align: left;
+	
+}
+
+input{
+	width: 300px;
+	height: 20px;
+	border: 2px solid #003399;
+}
+.file{
+	border:none;
+}
+
+.textarea{
+	border: 2px solid #003399;
+}
+
+.submit{
+	width: 100px;
+	height: 30px;
+	float:right;
+	background-color: green;
+	color: white;
+	border: none;
+}
+footer{
+	background-color:  #ebebe0;
+	color: black;
+	height: 100px;
+	line-height: 20px;
+
+
+}
+
+ul,li{
+	list-style: none;
+	float: left;
+	display: block;
+	
+}
+a{
+	text-decoration: none;
+	color: #003399;
+}
+
+body{
+	background-color: white;
+}

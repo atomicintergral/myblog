@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Oluaka Blog</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<div class="header">
+  		<center>
+  			 BLOG<img src="logo.jpg">
+  		<center>
+  			<ul>
+  				<li><a href="#">Home |</a></li>
+  				<li><a href="#">Older Post |</a></li>
+  				<li><a href="#">Settings</a></li>
+  			</ul>
+  	</div>
+
+  	<center>
+  		<div class="form">
+  				<h3>New Post</h3>
+  			<form name="myForm" action="action_page.php"
+onsubmit="return validateForm()" method="post">
+  				Post title:<br>
+  				<input type="text" name="post_title"><br><br>
+
+  				Write Content:<br>
+  				<textarea col="300" row="100" class="textarea" name="content">
+
+  				</textarea>
+  				<br><br>
+
+  				Upload image:
+  				<input type="file" name="image_upload" class="file"><br><br>
+
+  				Post Category:
+  				<select class="textarea" name="category">
+  					<option>News</option>
+  					<option>Sports</option>
+  					<option>Fashion</option>
+  					<option>Entertainment</option>
+  				</select><br><br>
+
+  				Author:<br>
+  				<input type="text" name="author"><br><br>
+
+  				<input type="submit" value="submit" class="submit"><br><br>
+
+  		</form>
+  	</center>
+  		</div>
+  		<br><br>
+
+  		<footer>
+  			<center>
+  				<br><br>
+  				Oluka &copy 2018
+  			</center>
+
+  		</footer>
+    <script >
+    	function validateForm() {
+    var x = document.forms["myForm"]["author"].value;
+    if (x == "") {
+        alert("Authors name must be filled out");
+        return false;
+    }
+
+    var x = document.forms["myForm"]["post_title"].value;
+    if (x == "") {
+        alert("post title must be filled out");
+        return false;
+    }
+
+    var x = document.forms["myForm"]["content"].value;
+    if (x == "") {
+        alert("post content must be filled out");
+        return false;
+    }
+
+    var x = document.forms["myForm"]["image_upload"].value;
+    if (x == "") {
+        alert("image must be uploaded");
+        return false;
+    }
+}
+
+    </script>
+  </body>
+</html>
